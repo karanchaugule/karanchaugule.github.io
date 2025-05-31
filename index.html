@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Particle Background</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="particles-js"></div>
+    
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Karan Chaugule</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Karan Chaugule</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <!-- Section for Profile changes  -->
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/profile-image-1.PNG" alt="John Doe profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Karan Chaugule</h1>
+        <p class="section__text__p2">
+          <span id="typing-animation"></span>
+          <span class="cursor">|</span> <!-- Blinking cursor -->
+        </p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/resume-example.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/karan8727/'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/Karanchaugule'"
+          />
+        </div>
+      </div>
+    </section>
+<!-- Section for About changes  -->
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/profile-image-11-.png"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p>1+ years in Data Analysis</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>B.Tech Computer Science Degree <br>CGPA 8.98<br> </p>
+            </div>
+          </div>
+          <div class="about-me" style="
+          max-width: 700px;
+          margin: 0 auto;
+          padding: 20px;
+          font-family: 'Segoe UI', Roboto, sans-serif;
+          line-height: 1.6;
+          color: #333;
+          text-align: justify;
+          text-justify: inter-word;
+      ">
+          <p style="
+              font-size: 1.1em;
+              hyphens: auto;
+              margin: 0;
+          ">
+              I’m a Data Analyst with over a year of experience, currently working at Konecranes, and I’m passionate about turning data into meaningful insights. Throughout my journey, I’ve worked on automating processes, optimizing systems, and analyzing data to drive smarter decisions.
+
+<br> One of my proudest achievements was being part of Project Dignity, which automated IT ticket routing, improving accuracy by 85% and reducing manual work by 60%. I use tools like Excel, Python, SQL, and Power BI to transform complex data into clear, actionable insights. Whether developing dashboards, streamlining reports, or applying machine learning, I focus on delivering results that drive real-world impact.
+          </p>
+      </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+
+  </section>
+
+<!-- Section for Experience changes  -->
+<section id="experience">
+  <p class="section__text__p1">Explore My</p>
+  <h1 class="title">Experience</h1>
+  <div class="experience-details-container">
+    <div class="about-containers">
+
+      <!-- Data Analysis Experience -->
+<div class="details-container">
+<h2>GIT Trainee - Analyst</h2>
+<h3>August 2024 – Present</h3>
+<p>Konecranes Demag Pvt. Ltd.</p>
+
+<ul>
+  <li>
+    Led <strong>Project Dignity</strong> to automate IT ticket handling using NLP and Python, reducing manual effort and improving response time.
+  </li>
+  <li>
+    Analyzed support ticket data from <strong>ServiceNow</strong> using Pandas, regex, and spaCy to classify and prioritize issues automatically.
+  </li>
+  <li>
+    Built <strong>Power BI dashboards</strong> to showcase project impact, helping teams track efficiency gains and improve decision-making.
+  </li>
+</ul>
+
+  <div class="article-container">
+    <article>
+      <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+      <div>
+        <h3>Python</h3>
+      </div>
+    </article>
+    <article>
+      <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+      <div>
+        <h3>Machine learning</h3>
+      </div>
+    </article>
+    <article>
+      <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+      <div>
+        <h3>Power BI</h3>
+      </div>
+    </article>
+        <article>
+      <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+      <div>
+        <h3>Azure</h3>
+      </div>
+    </article>
+  </div>
+</div>
+
+
+      <!-- Business Intelligence & Visualization -->
+      <div class="details-container">
+       <h2>Junior Analyst</h2>
+<h3>Feb 2024 – July 2024</h3>
+<p>Anikaay Integration Pvt. Ltd.</p>
+
+<ul>
+  <li>
+    Developed and maintained interactive dashboards in Power BI and Excel, streamlining reporting processes for 200+ stakeholders and reducing manual reporting time by 40%.
+  </li>
+  <li>
+    articipated in A/B testing and statistical analysis, driving a 10% boost in website conversion rates
+through data-backed optimization strategies.
+  </li>
+  <li>
+     Automated data cleaning and transformation workflows using Python and Pandas, improving data accuracy and reducing processing time by 30%.
+  </li>
+</ul>
+        <div class="article-container">
+          <article>
+            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+            <div>
+              <h3>Power BI</h3>
+            </div>
+          </article>
+          <article>
+            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+            <div>
+              <h3>SQL</h3>
+            </div>
+          </article>
+          <article>
+            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+            <div>
+              <h3>Excel</h3>
+            </div>
+          </article>
+          <article>
+            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+            <div>
+              <h3>Data Analysis</h3>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </div>
+  <img
+    src="./assets/arrow.png"
+    alt="Arrow icon"
+    class="icon arrow"
+    onclick="location.href='./#projects'"
+  />
+
+
+
+  <!-- Section for Skills changes  -->
+  <section id="skills">
+    <p class="section__text__p1">Discover My</p>
+    <h1 class="title">Skills</h1>
+    <div class="skills-container">
+      <div class="skill">
+        <h3>SQL</h3>
+        <div class="progress-bar">
+          <div class="progress" data-width="90%">90%</div>
+        </div>
+      </div>
+      <div class="skill">
+        <h3>Python</h3>
+        <div class="progress-bar">
+          <div class="progress" data-width="80%">80%</div>
+        </div>
+      </div>
+      <div class="skill">
+        <h3>Power BI</h3>
+        <div class="progress-bar">
+          <div class="progress" data-width="85%">85%</div>
+        </div>
+      </div>
+      <div class="skill">
+        <h3>Excel (Advanced)</h3>
+        <div class="progress-bar">
+          <div class="progress" data-width="90%">90%</div>
+        </div>
+      </div>
+      <div class="skill">
+        <h3>Azure Cloud</h3>
+        <div class="progress-bar">
+          <div class="progress" data-width="75%">75%</div>
+        </div>
+      </div>
+      <div class="skill">
+        <h3>Pyspark</h3>
+        <div class="progress-bar">
+          <div class="progress" data-width="60%">60%</div>
+        </div>
+      </div>
+      <div class="skill">
+        <h3>ETL & Data Cleaning</h3>
+        <div class="progress-bar">
+          <div class="progress" data-width="70%">70%</div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+<!-- Section for Projects changes  -->
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/Project-1.jpg"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+
+            <h2 class="experience-sub-title project-title">Udemy Course Analysis</h2>
+             <p>Analyzed Udemy course data using Python, Pandas, and NumPy to identify trends, optimize course offerings, and created interactive Power BI dashboards for data-driven decision-making.</p>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/Karannchougule/Udemy_Course_Analysis'"
+              >
+                Github
+              </button>
+            </div>
+          </div>
+
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/Car_sales.png"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+
+            <h2 class="experience-sub-title project-title">Car Sales Analysis - Azure</h2>
+            <p>The Azure Car Sales Data Engineering project is an end-to-end pipeline that processes raw car sales data through Azure services, implementing Medallion Architecture (Bronze, Silver, Gold) for structured analytics.</p>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/karanchaugule/Azure_Car_sales_Project'"
+              >
+                Github
+              </button>
+            </div>
+          </div>
+
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/Heart.png"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Classification of Respiratory Syndromes</h2>
+            <p>This project employs a DenseNet architecture implemented in TensorFlow to classify respiratory syndromes—such as COPD, Asthma, Pneumonia, and Bronchiolitis—from chest X-ray images. </p>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/karanchaugule/Classification-of-Respiratory-Syndromes-'"
+              >
+                Github
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+
+
+    <!-- Contact details changes -->
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:karan.chougule.1520@gmail.com">karan.chougule.1520@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com/in/karan8727/">LinkedIn</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/Phone.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="7620668127"> +917620668127</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2025 Karan Chaugule. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
+<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
